@@ -1,7 +1,8 @@
 const express = require('express');
 const MongoURI = require('./config/conf').MongoURI;
 const PORT = require('./config/conf').port;
-const url = require('./routes/api/url')
+const url = require('./routes/api/url');
+const redirect = require('./routes/api/redirect');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -17,9 +18,7 @@ mongoose.connect(MongoURI, {useNewUrlParser: true, useUnifiedTopology: true},(er
     }
 });
 
-app.get('/',(req,res)=>{
-    res.send("hello there what's up");
-});
+app.use('/r',redirect);
 app.use('/api',url);
 app.listen(PORT, ()=>{
     console.log(`server lanched in port ${PORT}`);
