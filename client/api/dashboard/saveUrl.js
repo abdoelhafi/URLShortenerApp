@@ -1,20 +1,19 @@
 const axios = require('axios');
 
-const shrink = async (url)=> {
+const saveUrl = async (urlInput)=> {
 
     const config = {
         headers : {
             'Content_Type':'application/json'
         }
     }
-    const body = {url}
-    console.log(body);
-
+    const body = {urlInput}
     try {
-        const res = await axios.post('api/url',body,config);
+        const res = await axios.post('/api/app',body,config);
+
         return res;
     } catch (error) {
         console.log("error occured while pusuing request from client");
     }
 }
-export default shrink;
+export default saveUrl;

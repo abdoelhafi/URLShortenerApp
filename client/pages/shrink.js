@@ -3,7 +3,7 @@ import {useState, useEffect, Component} from 'react';
 import shrink from '../api/shrink/shrink'
 const axios = require('axios');
 
-const App = () => {
+const Shrink = () => {
 
     const [urls, setUrls] = useState({srcUrl: "", resUrl: ""});
 
@@ -18,9 +18,7 @@ const App = () => {
             ...prev,
             resUrl
         }));
-            
         });
-        
         console.log("this is the results in the shrink compnent : "+urls.resUrl);
     }
     const handlChange = (e) => {
@@ -44,7 +42,7 @@ const App = () => {
            </div>
     </div>
     {/* <div className={styles.container}>
-     <h1 className = {styles.title}> welcome to the url shortener app !</h1>
+     <h1 className = {styles.title}> welcome to the url shortener Shrink !</h1>
      <div className={styles.main}>
     <form onSubmit ={e =>{handlSubmit(e)}}>
         <input type='text' onChange={e => handlChange(e)} value={urls.srcUrl}/>
@@ -57,4 +55,4 @@ const App = () => {
      </>
 
 };
-    export default App;
+    export default Shrink;

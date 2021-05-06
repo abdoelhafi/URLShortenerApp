@@ -10,7 +10,7 @@ export default function Navbar() {
   <div className="collapse navbar-collapse">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
-        <a className="nav-link js-scroll-trigger" href="#about">About</a>
+        <a className="nav-link js-scroll-trigger" href="/login">login</a>
       </li>
       <li className="nav-item">
         <a className="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -21,10 +21,6 @@ export default function Navbar() {
     </ul>
   </div>
 </div>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
 
 </nav>
     )

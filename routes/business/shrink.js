@@ -1,10 +1,10 @@
 const {nanoid} = require('nanoid');
-const conf = require('../../config/conf');
                                                     
 const shrink = (url) => {
 
     const urlCode = nanoid();
-    const urlBase = conf.domainName;
+    // const urlBase = conf.domainName;
+    const urlBase = process.env.DOMAIN_NAME;
     const shortUrl = [urlBase,urlCode].join('/');
     console.log(shortUrl);
     return {longUrl: url, shortUrl: shortUrl, urlCode: urlCode}

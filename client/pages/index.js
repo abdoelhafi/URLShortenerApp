@@ -1,8 +1,7 @@
 import React from 'react'
-import Navbar from './components/utils/Navbar' 
 
 const Home = () => <>
-<Navbar />
+
 <div className="jumbotron">
       <div className="container">
         <h1>Welcome to Shrink url!</h1>
