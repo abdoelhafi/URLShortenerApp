@@ -15,40 +15,15 @@ const Home = () => <>
 
     <div className="container">
       <div className="row">
-        <div className="col-md-4">
-          <h2>Heading</h2>
+        <div className="col-md-12">
+          <h2>what the app is doing</h2>
           <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
+            As like magic you can turn a very long url into short one just with one click and then the
+            shrinked link redirect to the original one with the use of privacy protection and without any 
+            secruity issues.
           </p>
           <p>
-            <a className="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p>
-        </div>
-        <div className="col-md-4">
-          <h2>Heading</h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
-          </p>
-          <p>
-            <a className="btn btn-default" href="#" role="button">View details &raquo;</a>
-          </p>
-        </div>
-        <div className="col-md-4">
-          <h2>Heading</h2>
-          <p>
-            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-            nibh, ut fermentum massa justo sit amet risus.
-          </p>
-          <p>
-            <a className="btn btn-default" href="#" role="button">View details &raquo;</a>
+            <a className="btn btn-default" href="/shrink" role="button">try it now &raquo;</a>
           </p>
         </div>
       </div>

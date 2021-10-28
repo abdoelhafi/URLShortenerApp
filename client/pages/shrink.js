@@ -37,10 +37,10 @@ const App = () => {
         <p>put your URL bellow :</p>
 
         <form className="input-group mb-3" onSubmit ={e =>{handlSubmit(e)}}>
-        <input type='text'  onChange={e => handlChange(e)} value={urls.srcUrl} className="form-control" placeholder="Recipient's username" />
+        <input type='text'  onChange={e => handlChange(e)} value={urls.srcUrl} className="form-control" placeholder="make a url here" />
         <input type="submit" value = "shrink now" className="btn btn-outline-secondary" />
         </form>
-        <div>{urls.resUrl ? <p className = "font-weight-light">your shortener Url is : <a className = "font-italic" href = {urls.resUrl}>{urls.resUrl}</a> </p>: <p className = " font-weight-light">Your link will apear here</p>}</div> 
+        <div>{urls.resUrl ? <p className = "font-weight-light">your shortener Url is : <a className = "font-italic" href = {urls.resUrl}>{urls.resUrl}</a> </p>: <p className = " font-weight-light">Your shrinked link will apear here</p>}</div> 
            </div>
     </div>
     {/* <div className={styles.container}>
